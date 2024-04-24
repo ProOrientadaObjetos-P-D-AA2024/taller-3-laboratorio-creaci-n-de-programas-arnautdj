@@ -39,13 +39,19 @@ public class Terreno {
         this.valorMetroCuadrado = valorMetroCuadrado;
     }
     
-    public double calcularArea() {
+    public void calcularArea() {
         area = ancho * largo;
+    }
+    
+    public double getArea() {
         return area;
     }
 
-    public double calcularCosto() {
+    public void calcularCosto() {
         costoTerreno = area * valorMetroCuadrado;
+    }
+    
+    public double getCostoTerreno(){
         return costoTerreno;
     }
 

@@ -18,22 +18,47 @@ public class Ejecutor {
         
         Terreno tierra = new Terreno();
         
-        double ancho = 200;
-        double largo = 180;
+        double ancho = 30;
+        double largo = 45;
         double valorM2 = 1199;
         
         tierra.setAncho(ancho);
         tierra.setLargo(largo);
         tierra.setValorMetroCuadrado(valorM2);
         
-        double area = tierra.calcularArea();
-        double costoTerreno = tierra.getValorMetroCuadrado();
+        tierra.calcularArea();
+        tierra.calcularCosto();
         
-        System.out.println("Ancho: " + ancho + "m");
-        System.out.println("Largo: " + largo + "m");
-        System.out.println("Area: " + area + "m^2");
-        System.out.println("Valor metro cuadrado: $" + valorM2);
-        System.out.println("Costo total: $" + costoTerreno);
+        double area = tierra.getArea();
+        double costoTerreno = tierra.getCostoTerreno();
+        
+        System.out.printf("Los datos del terreno 1 son:\nAncho: %.2f m\nLargo:"
+                + " %.2f m\nArea: %.2f m^2\nValor metro cuadrado: $%.2f\nCosto "
+                + "total: $%.2f\n\n",
+                ancho, largo, area, valorM2, costoTerreno);
+
+
+        
+        Terreno tierraDos = new Terreno();
+        
+        double ancho2 = 30;
+        double largo2 = 320;
+        double valorM22 = 980;
+        
+        tierraDos.setAncho(ancho2);
+        tierraDos.setLargo(largo2);
+        tierraDos.setValorMetroCuadrado(valorM22);
+        
+        tierraDos.calcularArea();
+        tierraDos.calcularCosto();
+        
+        double area2 = tierraDos.getArea();
+        double costoTerreno2 = tierraDos.getCostoTerreno();
+        
+        System.out.printf("Los datos del terreno 2 son:\nAncho: %.2f m\nLargo:"
+                + " %.2f m\nArea: %.2f m^2\nValor metro cuadrado: $%.2f\nCosto "
+                + "total: $%.2f\n\n",
+                ancho2, largo2, area2, valorM22, costoTerreno2);
         
     }
     
