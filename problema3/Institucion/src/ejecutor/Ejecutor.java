@@ -30,7 +30,7 @@ public class Ejecutor {
         institucion.setNumDocentes(numDocentes);
         institucion.setNumSedes(numSedes);
         institucion.setGastoAlumno(gastoAlumno);
-        institucion.setPresupuesto(gastoAlumno);
+        institucion.setPresupuesto();
         
         System.out.printf("Datos de la institucion 1:\nNombre de la institucion:"
                 + " %s\nTipo de institucion: %s\nNumero de alumnos: %d\nNumero "
@@ -58,7 +58,7 @@ public class Ejecutor {
         institucionDos.setNumDocentes(numDocentes2);
         institucionDos.setNumSedes(numSedes2);
         institucionDos.setGastoAlumno(gastoAlumno2);
-        institucionDos.setPresupuesto(gastoAlumno2);
+        institucionDos.setPresupuesto();
         
         System.out.printf("Datos de la institucion 2:\nNombre de la institucion:"
                 + " %s\nTipo de institucion: %s\nNumero de alumnos: %d\nNumero "

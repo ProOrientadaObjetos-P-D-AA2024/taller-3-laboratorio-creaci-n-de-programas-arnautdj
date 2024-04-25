@@ -70,8 +70,8 @@ public class Institucion {
         return presupuesto;
     }
 
-    public void setPresupuesto(double presupuesto) {
-        this.presupuesto = presupuesto;
+    public void setPresupuesto() {
+        presupuesto = gastoAlumno * numAlumnos;
     }
     
 }
